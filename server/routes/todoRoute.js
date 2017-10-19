@@ -13,5 +13,8 @@ var config = {
 var pool = new pg.Pool(config);
 
 router.get('/',function(req,res){
+  console.log('GET request received');
   res.send("Heeeeeeey");
 });
+
+module.exports = router;
